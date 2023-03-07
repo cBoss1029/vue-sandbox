@@ -51,8 +51,6 @@
 
   function handleListItemClick(character: Character) {
     router.push(`/details/${character.id}`);
-
-    console.log(character);
   }
   
   onMounted(async () => {

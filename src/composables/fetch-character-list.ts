@@ -38,7 +38,6 @@ export async function useFetchCharacterList() {
     state.loading = true;
     const response = await fetch(marvelCharactersUrl);
     const json = await response.json();
-    console.log('res ***', json)
     state.data = json.data.results;
     state.loading = false;
     // TODO: figure out proper typing for err
@@ -46,6 +45,5 @@ export async function useFetchCharacterList() {
     state.error = err.message;
     state.loading = false;
   }
-  console.log({...state})
   return { ...toRefs(state) };
 }

@@ -19,7 +19,6 @@
  onMounted(() => {
    const characterId = Number(router.currentRoute.value.params.id);
    if (typeof characterId === 'number') {
-     console.log(characterId);
       fetchCharacterDetails(characterId);
    }
  });
