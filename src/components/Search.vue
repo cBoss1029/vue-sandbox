@@ -44,6 +44,7 @@
     state.isSearchFocused = true;
   }
 
+  // TODO: handle blur so that clicking inside the list doesn't close it
   function handleSearchInputBlur() {
     state.isSearchFocused = false;
   }
